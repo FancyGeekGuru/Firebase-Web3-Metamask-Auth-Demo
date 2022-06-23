@@ -1,6 +1,6 @@
-# @elrondnetwork/dapp-template
-The __Elrond dApp Template__, built using [React.js](https://reactjs.org/) and [Typescript](https://www.typescriptlang.org/).
-It's a basic implementation of [@elrondnetwork/dapp-core](https://www.npmjs.com/package/@elrondnetwork/dapp-core), providing the basics for Elrond authentication and TX signing.
+# BIIA platform
+The __Ethereum dApp Template__, built using [React.js](https://reactjs.org/) and [Typescript](https://www.typescriptlang.org/).
+It's a basic implementation of [@web3](https://www.npmjs.com/package/@web3), providing the basics for metamask authentication and TX signing.
 
 See [Dapp template](https://dapp-template.elrond.com/) for live demo.
 
@@ -29,7 +29,6 @@ Go to `App.tsx` and edit the `environment` variable according to the environment
 Valid values are `testnet`, `devnet` or `mainnet`
 
 If you need to edit the network configuration, you can pass in a `customNetworkConfig` object.
-More info about this can be found in [dapp-core documentation](https://github.com/ElrondNetwork/dapp-core)
 
 ### Step 3. Running in development mode
 
@@ -54,10 +53,6 @@ To build the project run:
 npm run build
 ```
 
-## Roadmap
-
-See the [open issues](https://github.com/ElrondNetwork/dapp-template/issues) for a list of proposed features (and known issues).
-
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -72,4 +67,4 @@ One can contribute by creating _pull requests_, or by opening _issues_ for disco
 
 ## Developers
 
-The [Elrond Team](https://elrond.com/team/).
+The [Fancydev0225](https://github.com/fancydev0225).
