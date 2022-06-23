@@ -1,0 +1,28 @@
+.user-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+.create-but {
+    padding: 5px 30px;
+    border-radius: 5px;
+    background: #69fa27;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.top-nav {
+    background-image: url("../../assets/img/top_nav.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}

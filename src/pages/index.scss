@@ -1,0 +1,10 @@
+.wallet-connect-but {
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        background: rgb(255, 172, 95);
+    }
+}

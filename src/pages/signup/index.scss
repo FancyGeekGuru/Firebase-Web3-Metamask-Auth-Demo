@@ -1,0 +1,26 @@
+input {
+    // background-color: gray;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    min-width: 300px;
+}
+
+.sign-up-card {
+    background-color: rgb(26, 25, 25);
+    padding: 40px 20px;
+    border-radius: 10px;
+
+    .save-but {
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+        padding: 3px;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            background-color: rgb(68, 68, 68);
+            color: white;
+        }
+    }
+}
