@@ -14,6 +14,7 @@ import {
     user_already_registered,
 } from '../state/actions/auth';
 
+
 const Home = () => {
     const dispatch: any = useDispatch();
     const navigate = useNavigate();

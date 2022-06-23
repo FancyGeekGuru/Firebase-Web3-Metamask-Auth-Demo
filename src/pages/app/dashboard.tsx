@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import brodcast_img from 'assets/img/broadcast.png';
 import { routeNames } from 'routes';
+import { metamask_disconnected } from 'state/actions/auth';
 import { RootState } from 'state/store';
 import { storage } from "../../firebase";
 import './index.scss';
 
 const Dashboard = () => {
     const navigate = useNavigate();
+    const dispatch: any = useDispatch();
 
     const { userInfo, publicAddress } = useSelector(
         (state: RootState) => ({
@@ -37,6 +39,10 @@ const Dashboard = () => {
         navigate(routeNames.createsession);
     };
 
+    const logout = () => {
+        dispatch(metamask_disconnected());
+    };
+
     return (
         <>
             <div className='top-nav' style={{ height: '200px' }} />
@@ -50,6 +56,8 @@ const Dashboard = () => {
                             <span style={{ fontSize: '15px' }}>{userInfo.name}</span>
                             <span style={{ fontSize: '12px' }}>{userInfo.description} </span>
                             <span className='mt-2' style={{ fontSize: '12px', color: 'gray' }}>{publicAddress}</span>
+
+                            <span className='mt-5' onClick={logout}>Logout</span>
                         </div>
                     </Col>
                     <Col lg={8}>
